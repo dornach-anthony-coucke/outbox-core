@@ -1,0 +1,24 @@
+{
+  "name": "outbox-core",
+  "version": "0.1.0",
+  "description": "Pure TypeScript SPI for the transactional outbox pattern — zero dependencies, zero framework, zero ORM.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
